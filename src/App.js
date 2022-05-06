@@ -1,12 +1,8 @@
-import { Login } from "./pages/Login";
-import { Register } from "./pages/Register";
-import { Route, BrowserRouter,Routes} from "react-router-dom";
-
-
+import Render from "./hooks/Render";
 function App() {
   return (
     <div className="App">
-        <Login/>
+     <Render/>
     </div>
   );
 }
