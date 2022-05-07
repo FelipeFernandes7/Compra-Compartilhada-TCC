@@ -49,7 +49,7 @@ input {
   filter: saturate(2);
 }
 
-.container-register {
+.container_register {
   margin-top: 80px;
   border-radius: 20px;
   padding: 40px;
@@ -62,38 +62,38 @@ input {
   flex-direction: column;
 }
 
-.register-area{
+.register_area{
   align-items: center;
 }
 
-.email-area{
+.email_area{
     display: flex;
     margin-top: 30px;
 }
 
-.cnpj-area{
+.cnpj_area{
     display: flex;
     margin-top: 50px;
 }
 
-.password-area{
+.password_area{
     display: flex;
     margin-top: 50px;
 }
 
-.confPassword-area{
+.confPassword_area{
     display: flex;
     margin-top: 50px;
 }
 
-.socialReason-area{
+.socialReason_area{
     display: flex;
     align-items: center;
     margin-top: 50px;
     padding-right: 50;
 }
 
-.ie-area{
+.ie_area{
     display: flex;
     margin-top: 50px;
 }

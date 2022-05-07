@@ -1,46 +1,46 @@
-import "../styles/login.css";
+import styles from  "../styles/login.module.css";
 import Logo from "../assets/globo 1.svg";
 import React from "react";
 
 export function Login() {
   return (
-    <div className="container">
-      <div className="logo-title">
-        <div className="logo">
-          <img className="img" src={Logo} alt="" />
+    <div className={styles.container}>
+      <div className={styles.logo_title}>
+        <div className={styles.logo}>
+          <img className={styles.img} src={Logo} alt="" />
         </div>
-        <div className="title">
+        <div className={styles.title}>
           <h4>Compra Compartilhada</h4>
         </div>
       </div>
 
-      <div className="lineMid">
-        <div className="line"></div>
+      <div className={styles.lineMid}>
+        <div className={styles.line}></div>
       </div>
 
-      <div className="containerLogin">
+      <div className={styles.containerLogin}>
         <h1>Login</h1>
-        <div className="items-login">
-          <div className="cnpj-area">
+        <div className={styles.items_login}>
+          <div className={styles.cnpj_area}>
             <h3>CNPJ</h3>
             <input type="text" placeholder="informe seu CNPJ" />
           </div>
 
-          <div className="senha-area">
+          <div className={styles.senha_area}>
             <h3>Senha</h3>
             <input type="password" placeholder="informe sua senha" />
           </div>
 
-          <div className="alternative">
-            <div className="forgot_password">
-              <a href="">Esqueci a Senha</a>
+          <div className={styles.alternative}>
+            <div className={styles.forgot_password}>
+              <a href="/">Esqueci a Senha</a>
             </div>
-            <div className="register">
-              <a href="">Cadastre-se</a>
+            <div className={styles.register}>
+              <a href="/">Cadastre-se</a>
             </div>
           </div>
           
-          <div className="btnEntrar">
+          <div className={styles.btnEntrar}>
             <button>Entrar</button>
           </div>
 

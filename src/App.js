@@ -1,8 +1,10 @@
-import Render from "./hooks/Render";
+
+import Router from "./routes/Router";
+
 function App() {
   return (
     <div className="App">
-     <Render/>
+     <Router/>
     </div>
   );
 }

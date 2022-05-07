@@ -17,12 +17,12 @@ body {
 .container {
   display: flex;
   align-items: center;
-  margin-top: 289px;
+  margin-top: 80px;
   justify-content: center;
 }
 
-.items-login,
-.senha-area {
+.items_login,
+.senha_area{
   margin-top: 50px;
 }
 
@@ -99,7 +99,7 @@ a:hover {
   color: #ee82ee;
   transition: 0.2s ease-in;
 }
-.logo-title{
+.logo_title{
     display: flex;
     flex-direction: column;
     align-items: center;
