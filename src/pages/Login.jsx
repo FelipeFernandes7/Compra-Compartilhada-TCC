@@ -1,8 +1,28 @@
-import styles from  "../styles/login.module.css";
+import styles from "../styles/login.module.css";
 import Logo from "../assets/globo 1.svg";
-import React from "react";
+import React, { Component, useState } from "react";
+import api from "./api/api.js";
+
 
 export function Login() {
+  const [_cnpj, cnpj] = useState("");
+  const [_password, password] = useState("");
+  async function onEntrarClicked() {
+    try {
+      const response = await api.post("api/usuario/login", {
+        cnpj: _cnpj,
+        senha: _password,
+      });
+      console.log(response.data);
+      if (response.status == 200) {
+        alert("Bem vindo");
+       //REdirecionar para HOME
+      }
+      alert("Usuario ou senha errados");
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <div className={styles.container}>
       <div className={styles.logo_title}>
@@ -23,12 +43,22 @@ export function Login() {
         <div className={styles.items_login}>
           <div className={styles.cnpj_area}>
             <h3>CNPJ</h3>
-            <input type="text" placeholder="informe seu CNPJ" />
+            <input
+              type="text"
+              placeholder="informe seu CNPJ"
+              value={_cnpj}
+              onChange={(e) => cnpj(e.target.value)}
+            />
           </div>
 
           <div className={styles.senha_area}>
             <h3>Senha</h3>
-            <input type="password" placeholder="informe sua senha" />
+            <input
+              type="password"
+              placeholder="informe sua senha"
+              value={_password}
+              onChange={(e) => password(e.target.value)}
+            />
           </div>
 
           <div className={styles.alternative}>
@@ -39,15 +69,14 @@ export function Login() {
               <a href="/">Cadastre-se</a>
             </div>
           </div>
-          
+
           <div className={styles.btnEntrar}>
-            <button>Entrar</button>
+            <button id="btnEntrar" onClick={onEntrarClicked}>
+              Entrar
+            </button>
           </div>
-
         </div>
-
       </div>
-
     </div>
   );
 }
