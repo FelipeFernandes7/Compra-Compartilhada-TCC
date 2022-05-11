@@ -14,7 +14,7 @@ export function Register() {
       </div>
       <div className={styles.container_register}>
         <div className={styles.perfil}>
-          <h1 className={styles.titleperf}>Perfil</h1>
+          <h2 className={styles.titleperf}>Perfil do candidato</h2>
         </div>
         <div className={styles.lineMid}>
           <div className={styles.line}></div>

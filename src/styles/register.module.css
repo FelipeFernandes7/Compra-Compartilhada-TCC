@@ -31,7 +31,7 @@ input {
    
   }
   .line {
-    height: 3px;
+    height: 2px;
     width: 450px;
     background: #ff1493;
   }
@@ -52,11 +52,19 @@ input {
   font-size: 50px;
   color: #fff;
 }
+h2{
+
+  text-transform: uppercase;
+  font-family: 'Open Sans Pro', sans-serif;
+  background: url(https://i.pinimg.com/originals/6c/fe/97/6cfe97d5859b379a2444a02a4e4e7998.gif);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .perfil {
   margin-bottom: 30px;
   text-align: center;
   border-radius: 20px;
-  
 }
 .titleperf{
   color: #fff;
