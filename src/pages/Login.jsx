@@ -18,7 +18,9 @@ export function Login() {
         alert("Bem vindo");
        //REdirecionar para HOME
       }
+      else{
       alert("Usuario ou senha errados");
+      }
     } catch (error) {
       console.log(error);
     }
