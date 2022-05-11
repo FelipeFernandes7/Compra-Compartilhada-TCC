@@ -27,16 +27,16 @@ export function Register() {
           </div>
           <div className={styles.email_area}>
             <h3>Email:</h3>
-            <input type="text" placeholder=" Adicionar Email" />
+            <input type="email" placeholder=" Adicionar Email" />
           </div>
           <div className={styles.password_area}>
             <h3>Senha:</h3>
-            <input type="text" placeholder=" Adicionar Senha" />
+            <input type="password" placeholder=" Adicionar Senha" />
           </div>
 
           <div className={styles.confPasswword_area}>
             <h3>Confirmar Senha:</h3>
-            <input type="text" placeholder=" Confirmar Senha" />
+            <input type="password" placeholder=" Confirmar Senha" />
           </div>
 
           <div className={styles.socialReason_area}>
