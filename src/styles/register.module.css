@@ -21,7 +21,19 @@ input {
   }
 
   h3{
-    color: #fff;
+    color:#fff;
+  }
+
+  .lineMid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .line {
+    height: 3px;
+    width: 450px;
+    background: #ff1493;
   }
 
 .header {
@@ -33,6 +45,7 @@ input {
 
 .logo {
   padding-right: 30px;
+  
 }
 
 .h1 {
@@ -41,6 +54,12 @@ input {
 }
 .perfil {
   margin-bottom: 30px;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+.titleperf{
+  color: #fff;
 }
 
 .img {
@@ -50,7 +69,7 @@ input {
 }
 
 .container_register {
-  margin-top: 80px;
+  margin-top: 0px;
   border-radius: 20px;
   padding: 40px;
 }
@@ -66,37 +85,18 @@ input {
   align-items: center;
 }
 
+.cnpj_area,
+.ie_area,
+.password_area,
+.confPasswword_area,
+.socialReason_area,
 .email_area{
-    display: flex;
+  justify-content: center;
+    align-items: center;
     margin-top: 30px;
 }
 
-.cnpj_area{
-    display: flex;
-    margin-top: 50px;
-}
 
-.password_area{
-    display: flex;
-    margin-top: 50px;
-}
-
-.confPassword_area{
-    display: flex;
-    margin-top: 50px;
-}
-
-.socialReason_area{
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    padding-right: 50;
-}
-
-.ie_area{
-    display: flex;
-    margin-top: 50px;
-}
 
 
 

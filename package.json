@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sweetalert2/theme-dark": "^5.0.11",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -16,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-switch": "^6.0.0",
     "redirect": "^0.2.0",
+    "sweetalert2": "^11.4.13",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
