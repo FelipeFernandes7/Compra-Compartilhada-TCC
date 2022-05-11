@@ -27,7 +27,7 @@ export function Login() {
           senha: _password,
         });
         console.log(response.data);
-        if (response.status == 200) {
+        if (response.status === 200) {
           alert("Bem vindo");
         }
         //REdirecionar para HOME

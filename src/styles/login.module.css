@@ -15,7 +15,7 @@ body {
 .container {
   display: flex;
   align-items: center;
-  margin-top: 240px;
+  margin-top: 50px;
   justify-content: center;
 }
 
@@ -80,7 +80,7 @@ button {
   background: #ff00ff;
   font-weight: 600;
   color: #fff;
-  height: 45px;
+  height: 50px;
   width: 140px;
   font-size: 17.5px;
   text-align: center;
