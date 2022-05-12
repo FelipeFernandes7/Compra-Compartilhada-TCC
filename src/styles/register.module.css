@@ -24,6 +24,51 @@ input {
     color:#fff;
   }
 
+  button {
+    background: #ff00ff;
+    font-weight: 600;
+    color: #fff;
+    height: 50px;
+    width: 140px;
+    font-size: 17.5px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .container{
+    padding: 30px;
+  }
+
+.setaChange{
+  display: flex;
+  justify-content: left;
+  margin-top:30px ;
+  margin-left: 50px;
+  background: #ff00ff;
+
+
+  border-radius: 10px;
+  max-width: 60px;
+  max-height: 60px;
+  padding-left: 4px;
+}
+.allItems{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+  .seta{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+
   .lineMid {
     display: flex;
     align-items: center;
@@ -40,17 +85,19 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  text-align: center;
+  margin-top: 0px;
 }
 
 .logo {
-  padding-right: 30px;
+  padding-right: 40px;
   
 }
 
 .h1 {
   font-size: 50px;
   color: #fff;
+  padding-right: 30px;
 }
 .titleperf{
   text-transform: uppercase;
@@ -81,12 +128,7 @@ input {
   padding: 40px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .register_area{
   align-items: center;

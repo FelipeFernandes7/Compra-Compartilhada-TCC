@@ -3,32 +3,47 @@ import Logo from "../assets/globo 1.svg";
 
 import Swal from "sweetalert2";
 import React, { useState } from "react";
-import api from "./api/api.js";
+import { Link } from "react-router-dom";
 
 export function Login() {
   const [cnpj, setCnpj] = useState("");
   const [_password, password] = useState("");
   async function onEntrarClicked() {
     try {
-      if (!cnpj && !_password) {
+      if (!cnpj || !_password) {
         Swal.fire({
-          background:"#191970",
-          color:"#fff",
-          position: "center",
+          background: "#191970",
+          color: "#fff",
           icon: "error",
-          title: "Campos Vazios",
-          showConfirmButton: false,
-          timer: 2500,
-        }); 
-      } 
-      else {
-        const response = await api.post("api/usuario/login", {
-          cnpj: cnpj,
-          senha: _password,
+          title: "Oops...",
+          text: "Você precisa preencher os campos!",
         });
-        console.log(response.data);
-        if (response.status === 200) {
-          alert("Bem vindo");
+      } else {
+        if (cnpj || _password) {
+          let timerInterval;
+          Swal.fire({
+            background: "#191970",
+            color: "#ff00ff",
+            title: "Redirecionando para Home",
+            html: "Aguarde um instante <b></b> ...",
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: () => {
+              Swal.showLoading();
+              const b = Swal.getHtmlContainer().querySelector("b");
+              timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft();
+              }, 100);
+            },
+            willClose: () => {
+              clearInterval(timerInterval);
+            },
+          }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+              console.log("I was closed by the timer");
+            }
+          });
         }
         //REdirecionar para HOME
       }
@@ -79,7 +94,7 @@ export function Login() {
               <a href="/">Esqueci a Senha</a>
             </div>
             <div className={styles.register}>
-              <a href="/">Cadastre-se</a>
+              <Link to="/register">Cadastre-se</Link>
             </div>
           </div>
 
