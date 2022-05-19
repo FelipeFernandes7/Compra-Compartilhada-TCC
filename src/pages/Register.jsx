@@ -3,8 +3,10 @@ import styles from "../styles/register.module.css";
 import seta from "../assets/arrow.png";
 
 import { Link } from "react-router-dom";
+import Toggle from "../components/Toggle";
 
 export function Register() {
+
   return (
     <div className={styles.container}>
       <div className={styles.setaChange}>
@@ -60,11 +62,16 @@ export function Register() {
             </div>
           </div>
         </div>
+        <div className="fornComp">
+        
+        </div>
         <div className={styles.btnEntrar}>
           <button id="btnEntrar">Salvar</button>
         </div>
       </div>
+      <Toggle/>
     </div>
+    
   );
 }
 export default Register;
