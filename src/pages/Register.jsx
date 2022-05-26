@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Toggle from "../components/Toggle";
 
 export function Register() {
-
   return (
     <div className={styles.container}>
       <div className={styles.setaChange}>
@@ -60,18 +59,34 @@ export function Register() {
               <h3>IE:</h3>
               <input type="text" placeholder=" Adicionar IE" />
             </div>
+            <div className={styles.uf_area}>
+              <h3>UF:</h3>
+              <input type="text" placeholder=" Adicionar UF" />
+            </div>
+            <div className={styles.cidade_area}>
+              <h3>Cidade:</h3>
+              <input type="text" placeholder=" Adicionar Cidade" />
+            </div>
+            <div className={styles.logradouro_area}>
+              <h3>Logradouro:</h3>
+              <input type="text" placeholder=" Adicionar Logradouro" />
+            </div>
+            <div className={styles.end_area}>
+              <h3>Endereço:</h3>
+              <input type="text" placeholder=" Adicionar Endereço" />
+            </div>
+            <div className={styles.comp_area}>
+              <h3>Complemento:</h3>
+              <input type="text" placeholder=" Adicionar Complemento" />
+            </div>
           </div>
         </div>
-        <div className="fornComp">
-        
-        </div>
+<Toggle/>
         <div className={styles.btnEntrar}>
           <button id="btnEntrar">Salvar</button>
         </div>
       </div>
-      <Toggle/>
     </div>
-    
   );
 }
 export default Register;

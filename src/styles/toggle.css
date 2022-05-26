@@ -1,20 +1,9 @@
-
-  .toggle-checkbox{
+.toggle-checkbox {
   height: 0px;
   width: 0px;
   opacity: 0;
 }
-.toggle{
- 
-  height: 26px;
-  width: 40px;
-  position: absolute;
-  border-radius: 15px;
-  background-color:#ff00ff;
-  right: 50%;
-  transition: all .3s;
-}
-.toggle-switch{
+.toggle {
   border: solid 2px #ff00ff;
   position: relative;
   display: inline-block;
@@ -23,11 +12,18 @@
   width: 70px;
   height: 40px;
 }
-.toggled{
+.toggle-switch {
+  height: 26px;
+  width: 40px;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #ff00ff;
+  transition: all 0.3s;
+}
+.toggled {
   right: 3px;
 }
 
-.toggle{
-    right: 3px;
-  }
-    
+.toggle {
+  right: 3px;
+}
