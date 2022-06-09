@@ -1,150 +1,72 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body {
-  background: #080624;
-}
-
-input {
-    opacity: 0.9;
-    padding-left: 20px;
-    margin-top: 10px;
-    height: 40px;
-    width: 450px;
-    border-radius: 16px;
-    border: none;
-    outline-color: #ff00ff;
-  }
-
-  h3{
-    color:#fff;
-  }
-
-  button {
-    background: #ff00ff;
-    font-weight: 600;
-    color: #fff;
-    height: 50px;
-    width: 140px;
-    font-size: 17.5px;
-    text-align: center;
-    border-radius: 10px;
-    border: none;
-  }
-
-  .container{
-    padding: 30px;
-  }
-
-.setaChange{
+.containerForm{
   display: flex;
-  justify-content: left;
-  margin-top:30px ;
-  margin-left: 50px;
-  background: #ff00ff;
-
-
-  border-radius: 10px;
-  max-width: 60px;
-  max-height: 60px;
-  padding-left: 4px;
+  align-items: center;
+  justify-content: center;
 }
-.allItems{
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-right: 50px;
 }
-
-  .seta{
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-  }
-
-
-  .lineMid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  .line {
-    height: 2px;
-    width: 450px;
-    background: #ff1493;
-  }
-
-.header {
+form h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+form span {
+  color:#ff00ff;
+}
+form {
+  width: 50%;
+  margin-top: 3.2rem;
+  background:#191970;
+  box-shadow: 0 .5rem 1rem 0.5rem rgba(48, 51, 107,1.0);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin-top: 0px;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
 }
-
-.logo {
-  padding-right: 40px;
-  
+form input {
+  color: #192a56;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  border: #d1d8e0 2px solid;
+  padding: 0.4rem;
+  width: 25rem;
 }
-
-.h1 {
-  font-size: 50px;
+form select {
+  color:#6ab04c;
+  font-weight: 600;
+  font-size: 16px;;
+  border-radius: 0.5rem;
+  border: #d1d8e0 2px solid;
+  padding: 0.4rem;
+  width: 25rem;
+}
+form select option {
+  font-size: 16px;
+  font-weight: 600;
   color: #fff;
-  padding-right: 30px;
+  background: #131313;
 }
-.titleperf{
-  text-transform: uppercase;
-  font-family: 'Open Sans Pro', sans-serif;
-  background: url(https://i.pinimg.com/originals/6c/fe/97/6cfe97d5859b379a2444a02a4e4e7998.gif);
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+h4 {
+  font-size: 16px;
+  color:#fff;
+  margin-top: 10px;
 }
-.perfil {
-  margin-bottom: 30px;
-  text-align: center;
-  border-radius: 20px;
+.info {
+  display: flex;
+  margin-top: 5px;
 }
-.titleperf{
-  color: #fff;
+.caixa {
+  display: flex;
 }
-
-.img {
-  height: 90px;
-  width: 90px;
-  filter: saturate(2);
+.minContainer {
+  margin-left: 40px;
 }
-
-.container_register {
-  margin-top: 0px;
-  border-radius: 20px;
-  padding: 40px;
-}
-
-
-
-.register_area{
-  align-items: center;
-}
-
-.cnpj_area,
-.ie_area,
-.password_area,
-.confPasswword_area,
-.socialReason_area,
-.email_area{
-  justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-
-
-

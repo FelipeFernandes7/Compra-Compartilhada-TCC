@@ -80,8 +80,8 @@ button {
   background: #ff00ff;
   font-weight: 600;
   color: #fff;
-  height: 50px;
-  width: 140px;
+  padding: 0.9rem;
+  width: 10rem;
   font-size: 17.5px;
   text-align: center;
   border-radius: 17px;
@@ -109,7 +109,7 @@ a:hover {
   margin-top: 30px;
   margin-right: 120px;
 }
-h4 {
+.title h4 {
   font-size: 30px;
   color: #fff;
 }

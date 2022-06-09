@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/utils": "^4.11.3",
+    "@mui/icons-material": "^5.8.3",
     "@sweetalert2/theme-dark": "^5.0.11",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -10,6 +13,8 @@
     "auth": "^0.0.9",
     "axios": "^0.27.2",
     "browser-router": "^0.2.0",
+    "font-awesome": "^4.7.0",
+    "material-ui-icons": "^1.0.0-beta.36",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
